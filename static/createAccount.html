@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Account Creation</title>
+
+		<script src="js/external/vue.global.js"></script>
+		<script src="js/external/vuex.global.js"></script>
+		<script src="js/external/vuex-persistedstate.js"></script>
+		<script src="js/external/axios.js"></script>
+	</head>
+	<body>
+	<main>
+		<navmenu></navmenu>
+		<h1>Create account</h1>
+
+		<fieldset>
+
+			<legend>Your Details</legend>
+
+
+			<form @submit.prevent="createAccount(username, firstName, surname, emailAddress, shippingAddress, password)">
+
+				<label>Username:</label><input type="text" v-model="username" name="username" required/>
+				<label>First Name:</label><input type="text" v-model="firstName" name="first-name" required/>
+				<label>Last Name:</label><input type="text" v-model="surname" name="last-name" required/>
+				<label>Email:</label><input type="text" v-model="emailAddress" name="email-address" required/>
+				<label>Address:</label><input type="text" v-model="shippingAddress" name="postal-address" required/>
+				<label>Password:</label><input type="text" v-model="password" name="password" required/>
+
+				<button type="submit">Create Account</button>
+
+			</form>
+
+		</fieldset>
+
+		<h2>If you already have an account you can <a href="signin.html">Log in</a> here.</h2>
+	</main>
+	<script type="module" src="js/create-account.js"></script>
+</body>
+</html>

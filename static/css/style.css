@@ -1,0 +1,152 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/*
+    Created on : 11 Aug 2024, 17:53:05
+    Author     : leesa178
+*/
+
+/* centre the main content area */
+main {
+	max-width: 800px;
+	margin: auto;
+}
+
+/* Main background color */
+body {
+	background-color: #CED3DC;
+}
+
+* {
+	font-family: sans-serif
+}
+
+/* page headings */
+h1 {
+	text-align: center;
+	padding: 10px;
+}
+
+h2 {
+	text-align: center;
+}
+
+#company_logo {
+	display: block;
+	margin: 0 auto;
+}
+
+/* nav links */
+nav a {
+	border:solid;
+	padding: 5px;
+	margin: 5px;
+	text-decoration: none;
+	border-radius: 10px;
+	border-color: gray;
+	color: gray;
+	background-color: #48E5C2;
+}
+
+#nav-signout {
+	border:solid;
+	padding: 5px;
+	margin: 5px;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+	border-color: gray;
+	color: gray;
+}
+
+.navform {
+	display: inline-block;
+}
+
+nav {
+	text-align: center;
+}
+
+/* tables */
+table {
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 0px 0px;
+}
+
+td, th {
+	border: thin;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* forms */
+form {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	grid-gap: 1em 0.5em;
+}
+
+label {
+	grid-column: 1 / 2;
+	text-align: right;
+}
+
+input, button, select, textarea {
+	grid-column: 2 / 3;
+}
+
+textarea {
+	height: 4em;
+	resize: vertical;
+}
+
+/* colours */
+th, legend, label {
+	color: black;
+}
+
+/* link colour */
+a.nav {
+	color: purple;
+}
+
+h1, button {
+	background-color: #48E5C2;
+	color: black;
+}
+
+td, th {
+	border-color: #48E5C2;
+}
+
+#categories {
+	display: block;
+	text-align: center;
+}
+
+/* add some gaps between the major buttons */
+#categories button {
+	margin-left: 2pt;
+	margin-right: 2pt;
+}
+
+#button {
+	text-align: center;
+	border:solid;
+	padding: 5px;
+	margin: 5px;
+	text-decoration: none;
+	border-radius: 10px;
+	border-color: gray;
+	color: gray;
+	background-color: #48E5C2;
+}
+
+/* darkslategrey */
+

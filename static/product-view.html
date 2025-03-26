@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Product Viewer</title>
+
+		<script src="js/external/vue.global.js"></script>
+		<script src="js/external/vuex.global.js"></script>
+		<script src="js/external/vuex-persistedstate.js"></script>
+		<script src="js/external/axios.js"></script>
+	</head>
+	<body>
+	<navmenu></navmenu>
+	<main>
+		<h1>View Product</h1>
+
+		<fieldset>
+
+			<legend>Product Details</legend>
+
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Category</th>
+						<th>Price</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				<td>{{ product.productId }}</td>
+				<td>{{ product.name }}</td>
+				<td>{{ product.description }}</td>
+				<td>{{ product.category }}</td>
+				<td>{{ formatCurrency(product.listPrice) }}</td>
+				<td>{{ product.quantityInStock }}</td>
+
+				</tbody>
+
+			</table>
+
+		</fieldset>
+
+		<fieldset>
+
+			<legend>Adding to cart</legend>
+
+			<table>
+				<thead>
+					<tr>
+						<th>How many would you like to buy?</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+
+
+				<td><input type="number" v-model="quantity" name="quantity" required/><td>
+				<td><form @submit.prevent="addItemToCart()"><button id="button">Add to Cart</button></form></td>
+
+				</tbody>
+
+			</table>
+
+		</fieldset>
+
+
+
+
+	</main>
+	<script type="module" src="js/cart.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Sign In</title>
+
+		<script src="js/external/vue.global.js"></script>
+		<script src="js/external/vuex.global.js"></script>
+		<script src="js/external/vuex-persistedstate.js"></script>
+		<script src="js/external/axios.js"></script>
+
+	</head>
+	<body>
+	<main>
+		<navmenu></navmenu>
+	<h1>Sign in to Frederick's Fantastic Fishing Supplies</h1>
+
+	<fieldset>
+
+		<legend>Log in</legend>
+
+		<form @submit.prevent="signIn">
+
+			<label>Username:</label><input type="text" v-model="username" name="username" required/>
+			<label>Password:</label><input type="text" v-model="password" name="password" required/>
+
+			<button type="submit">Sign in</button>
+
+		</form>
+
+	</fieldset>
+
+	<h2>If you don't have an account you can <a class="nav" href="createAccount.html">create one</a> here.</h2>
+
+	</main>
+	<script type="module" src="js/sign-in.js"></script>
+</body>
+</html>

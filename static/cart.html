@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Cart</title>
+
+		<script src="js/external/vue.global.js"></script>
+		<script src="js/external/vuex.global.js"></script>
+		<script src="js/external/vuex-persistedstate.js"></script>
+		<script src="js/external/axios.js"></script>
+
+	</head>
+	<body>
+		<main>
+			<navmenu></navmenu>
+			<h1>Cart contents</h1>
+
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Description</th>
+						<th>Category</th>
+						<th>Quantity</th>
+						<th>Unit Price</th>
+						<th>Line Total</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr v-for="item in items">
+						<td>{{ item.product.productId }}</td>
+						<td>{{ item.product.name }}</td>
+						<td>{{ item.product.description }}</td>
+						<td>{{ item.product.category }}</td>
+						<td>{{ item.quantityPurchased }}</td>
+						<td>{{ formatCurrency(item.product.listPrice) }}</td>
+						<td>{{ formatCurrency(getItemTotal(item)) }}</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+			<h2>Order Total: {{ formatCurrency(getCartTotal()) }}<h2>
+
+					<button id="button" @click.prevent="checkOut()">Check out cart</button>
+					</main>
+					<script type="module" src="js/cart.js"></script>
+					</body>
+					</html>
+

@@ -8,9 +8,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Mark George
- */
+
 public class ProductCollectionsDAO implements ProductDAO {
 
 	private static final Multimap<String, Product> categories = HashMultimap.create();

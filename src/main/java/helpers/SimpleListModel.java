@@ -10,8 +10,6 @@ import javax.swing.MutableComboBoxModel;
 /**
  * A mutable ListModel for JList and JComboBox components.
  *
- * @author Mark George <mark.george@otago.ac.nz>
- *
  * License: FreeBSD (https://opensource.org/licenses/BSD-2-Clause)
  */
 @SuppressWarnings({"rawtypes", "unchecked"})

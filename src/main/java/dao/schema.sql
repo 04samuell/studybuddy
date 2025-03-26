@@ -2,10 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Other/SQLTemplate.sql to edit this template
  */
-/**
- * Author:  leesa178
- * Created: 18 Aug 2024
- */
 
 CREATE TABLE IF NOT EXISTS customer (
 	customer_id INTEGER AUTO_INCREMENT (1000),

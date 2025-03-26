@@ -2,9 +2,7 @@ package domain;
 
 import java.math.BigDecimal;
 
-/**
- * @author Mark George
- */
+
 public class SaleItem {
 
 	private BigDecimal quantityPurchased;

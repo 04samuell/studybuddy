@@ -5,9 +5,7 @@ import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.HashSet;
 
-/**
- * @author Mark George
- */
+
 public class Sale {
 
 	private Integer saleId;

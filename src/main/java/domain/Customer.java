@@ -7,9 +7,7 @@ import net.sf.oval.constraint.Min;
 import net.sf.oval.constraint.NotBlank;
 import net.sf.oval.constraint.NotNull;
 
-/**
- * @author Mark George
- */
+
 public class Customer {
 
 	//@NotNull(message = "ID must be provided.")

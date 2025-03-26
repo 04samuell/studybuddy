@@ -3,9 +3,7 @@ package dao;
 import domain.Product;
 import java.util.Collection;
 
-/**
- * @author Mark George
- */
+
 public interface ProductDAO {
 
 	Collection<Product> filterByCategory(String category);

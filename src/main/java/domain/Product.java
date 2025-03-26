@@ -7,9 +7,7 @@ import java.util.Objects;
 //import net.sf.oval.constraint.NotNegative;
 //import net.sf.oval.constraint.NotNull;
 
-/**
- * @author Mark George
- */
+
 public class Product {
 
 	//@NotNull(message = "ID must be provided.")
